@@ -27,56 +27,38 @@
 		<title>鉴真宝后台页面</title>
 	</head>
 
-	<body style="background: url(../images/bj.png) no-repeat; background-size: cover;">
-		<header class="navbar-wrapper">
-			<div class="navbar navbar-fixed-top">
-				<div class="container-fluid cl">
-					<a class="logo navbar-logo f-l mr-10 hidden-xs" href="/aboutHui.shtml">H-ui.admin</a>
-					<a class="logo navbar-logo-m f-l mr-10 visible-xs" href="/aboutHui.shtml">H-ui</a> <span class="logo navbar-slogan f-l mr-10 hidden-xs">v3.0</span>
-					<a aria-hidden="false" class="nav-toggle Hui-iconfont visible-xs" href="javascript:;">&#xe667;</a>
-					<nav class="nav navbar-nav">
-						<ul class="cl">
-							<li class="dropDown dropDown_hover">
-								<a href="javascript:;" class="dropDown_A"><i class="Hui-iconfont">&#xe600;</i> 新增 <i class="Hui-iconfont">&#xe6d5;</i></a>
-								<ul class="dropDown-menu menu radius box-shadow">
-									<li>
-										<a href="javascript:;" onclick="article_add('添加资讯','article-add.html')"><i class="Hui-iconfont">&#xe616;</i> 资讯</a>
-									</li>
-									<li>
-										<a href="javascript:;" onclick="picture_add('添加资讯','picture-add.html')"><i class="Hui-iconfont">&#xe613;</i> 图片</a>
-									</li>
-									<li>
-										<a href="javascript:;" onclick="product_add('添加资讯','product-add.html')"><i class="Hui-iconfont">&#xe620;</i> 产品</a>
-									</li>
-									<li>
-										<a href="javascript:;" onclick="member_add('添加用户','member-add.html','','510')"><i class="Hui-iconfont">&#xe60d;</i> 用户</a>
-									</li>
-								</ul>
-							</li>
-						</ul>
-					</nav>
-					<nav id="Hui-userbar" class="nav navbar-nav navbar-userbar hidden-xs">
-						<ul class="cl">
-							<li>超级管理员</li>
-							<li class="dropDown dropDown_hover">
-								<a href="#" class="dropDown_A">admin <i class="Hui-iconfont">&#xe6d5;</i></a>
-								<ul class="dropDown-menu menu radius box-shadow">
-									<li>
-										<a href="#">个人信息</a>
-									</li>
-									<li>
-										<a href="#">切换账户</a>
-									</li>
-									<li>
-										<a href="#">退出</a>
-									</li>
-								</ul>
-							</li>
-						</ul>
-					</nav>
+	<body style="background: url(../images/bj.png) no-repeat; background-size: cover; position: relative;">
+		<header class="navbar-wrapper index_nav">
+			<nav class="container">
+				<div class="row">
+					<a href="#" class="col-lg-2 col-md-2 col-sm-2 col-xs-2 nav_log"><img class="img-responsive" alt="Responsive img" src="../images/鉴真宝.png"/></a>
+					<p class="col-lg-5 col-md-5 col-sm-5 col-xs-5 nav_center_p">管理员，欢迎您使用鉴真宝会员中心，上次登录的时间 <span>2017-03-29  11:11:11</span><span> 地点：杭州</span></p>
+					<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 nav_right_box">
+						<a href="#"><img src="../images/返回.png" alt="Responsive img" /></a>
+						<a href="#"><img src="../images/刷新.png" alt="Responsive img" /></a>
+						<a href="#"><img src="../images/返回首页.png" alt="Responsive img" /></a>
+						<a href="#"><img src="../images/退出登录.png" alt="Responsive img" /></a>
+						<p class="nav_right_p">用户名：<span>fx@163.com</span><i class="Hui-iconfont click_i">&#xe6d5;</i></p>
+					</div>
+				</div>
+			</nav>
+		</header>
+		<div class="samllbox" style="display: none;">
+			<i class="Hui-iconfont iii">&#xe70f;</i>
+			<div class="samllbox_touxiang center-block"></div>
+			<p class="text-center">fx@163.com</p>
+			<div class="row text-center">
+				<div class="col-lg-6 samllbox_bottom_left">
+				<i class="Hui-iconfont">&#xe6c9;</i>
+				<span>杭州</span>
+				</div>
+				<div class="col-lg-6 samllbox_bottom_right">
+				<i class="Hui-iconfont">&#xe60d;</i>
+				<span>个人信息</span>
 				</div>
 			</div>
-		</header>
+
+		</div>
 		<!--
 	
 	

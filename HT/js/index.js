@@ -3,9 +3,6 @@ $(function(){
 	$('.anv_left dl:first-child').addClass('dl_background');
 	$('.anv_left .nav_dl_a img').eq(0).attr('src','../images/会员信息1.png');
 	
-
-
-	
 	$('.anv_left dl').click(function(){
 		$('.anv_left .nav_dl_a img').eq(0).attr('src','../images/会员信息.png')
 		$('.anv_left .nav_dl_a img').eq(1).attr('src','../images/产品管理.png')
@@ -27,10 +24,13 @@ $(function(){
 			$('.anv_left .nav_dl_a img').eq(6).attr('src','../images/年费购买.png')
 		}
 	})
-
-	
 })
 
+$(function(){
+	$('.click_i').click(function(){
+		$('.samllbox').css('display')=='none'?$('.samllbox').css('display','block'):$('.samllbox').css('display','none')
+	})
+})
 
 
 

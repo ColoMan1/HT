@@ -1,6 +1,22 @@
+@media (min-width: 1200px) { .nav_right_p { float: right; } }
 .Hui-aside { background-color: rgba(0, 0, 0, 0.5); margin-left: 20px; padding: 0; }
 .Hui-aside .anv_left dl { padding: 19px 0; }
 
 .dl_background { background-color: #FFFFFF; }
+
+.index_nav { background-color: #182141; }
+.index_nav p { color: white; }
+.index_nav .nav_center_p { font-size: 12px; padding-left: 0; line-height: 70px; margin-left: 185px; }
+.index_nav .nav_right_p i { margin-left: 16px; cursor: pointer; }
+.index_nav .nav_right_box { float: right; padding: 0; line-height: 40px; }
+.index_nav .nav_log { margin-top: 5px; }
+
+@media (max-width: 1200px) { .index_nav .nav_right_box { line-height: 23px; }
+  .index_nav .nav_center_p { line-height: 24px; margin-left: 105px; } }
+.samllbox { height: 157px; width: 222px; background-color: #FFFFFF; border: 1px solid #CCCCCC; position: absolute; top: 45px; right: 10%; z-index: 1000; font-size: 13px; }
+.samllbox .samllbox_touxiang { height: 50px; width: 50px; border: 1px solid red; border-radius: 50%; }
+.samllbox .samllbox_bottom_left { padding-right: 0; border-right: 1px solid #CCCCCC; }
+.samllbox .samllbox_bottom_right { padding-left: 0; }
+.samllbox .iii { margin-left: 5px; }
 
 /*# sourceMappingURL=index.css.map */
