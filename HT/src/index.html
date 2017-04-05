@@ -66,7 +66,7 @@
 
 
 -->
-		<aside class="Hui-aside" >
+		<aside class="Hui-aside">
 			<div class="menu_dropdown bk_2 anv_left">
 				<dl id="menu-article">
 					<dt class="text-center">
@@ -78,7 +78,7 @@
 				</dl>
 				<dl>
 					<dt class="text-center">
-						<a data-href="article-list.html" data-title="产品管理" href="javascript:void(0)" class="nav_dl_a">
+						<a data-href="product_control.html" data-title="产品录入" href="javascript:void(0)" class="nav_dl_a">
 							<img src="../images/产品管理.png" alt=""  class="center-block"/>
 							<span class="nav_dl_span">产品管理</span>
 						</a>
@@ -129,18 +129,22 @@
 		<!--
 	
 	
----------------------------------------------------------------  右侧content
+---------------------------------------------------------------  右侧      content
 
 
 -->
 		<section class="Hui-article-box">
 			<div id="Hui-tabNav" class="Hui-tabNav hidden-xs">
 				<div class="Hui-tabNav-wp">
-					<ul id="min_title_list" class="acrossTab cl">
-						<li class="active">
-							<span title="我的桌面" data-href="member_message.html">我的桌面</span>
-							<em></em></li>
+					<ul id="min_title_list" class="acrossTab cl index_nav_span">
+						<li class="active" id="right_content_nav">
+							<span title="会员信息" data-href="member_message.html">会员信息</span>
+						</li>
+						<li id="right_content_nav">
+							<span title="企业信息" data-href="member_message.html">企业信息</span>
+						</li>
 					</ul>
+
 				</div>
 				<div class="Hui-tabNav-more btn-group">
 					<a id="js-tabNav-prev" class="btn radius btn-default size-S" href="javascript:;"><i class="Hui-iconfont">&#xe6d4;</i></a>
@@ -152,7 +156,12 @@
 					<div style="display:none" class="loading"></div>
 					<iframe scrolling="yes" frameborder="0" src="member_message.html"></iframe>
 				</div>
+				<div class="show_iframe" style="display:none;">
+					<div style="display:none" class="loading"></div>
+					<iframe scrolling="no" frameborder="1" src="member_message1.html" style="border: 0;"></iframe>
+				</div>
 			</div>
+			
 		</section>
 
 		<script type="text/javascript" src="../js/jquery.min.js"></script>

@@ -26,6 +26,7 @@ $(function(){
 	})
 })
 
+// ---------------------------------------------------------------------------------右上角用户名点击效果
 $(function(){
 	$('.click_i').click(function(){
 		$('.samllbox').css('display')=='none'?$('.samllbox').css('display','block'):$('.samllbox').css('display','none')

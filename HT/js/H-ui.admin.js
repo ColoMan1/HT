@@ -20,9 +20,9 @@ function tabNavallwidth(){
 	$tabNavitem.each(function(index, element) {
         taballwidth += Number(parseFloat($(this).width()+60))
     });
-	$tabNav.width(taballwidth+25);
+	$tabNav.width(taballwidth);
 	var w = $tabNavWp.width();
-	if(taballwidth+25>w){
+	if(taballwidth>w){
 		$tabNavmore.show()}
 	else{
 		$tabNavmore.hide();
@@ -104,13 +104,13 @@ function creatIframe(href,titleName){
 		$tabNavmore =topWindow.find(".Hui-tabNav-more");
 	var taballwidth=0;
 		
-	show_nav.find('li').removeClass("active");	
-	show_nav.append('<li class="active"><span data-href="'+href+'">'+titleName+'</span><i></i><em></em></li>');
+	show_nav.find('li').removeClass("active");
+	show_nav.append('<li class="active"><span data-href="'+href+'">'+titleName+'</span><i></i></li>');
 	if('function'==typeof $('#min_title_list li').contextMenu){
 		$("#min_title_list li").contextMenu('Huiadminmenu', {
 			bindings: {
 				'closethis': function(t) {
-					var $t = $(t);				
+					var $t = $(t);
 					if($t.find("i")){
 						$t.find("i").trigger("click");
 					}
@@ -128,9 +128,9 @@ function creatIframe(href,titleName){
 	$tabNavitem.each(function(index, element) {
         taballwidth+=Number(parseFloat($(this).width()+60))
     });
-	$tabNav.width(taballwidth+25);
+	$tabNav.width(taballwidth);
 	var w = $tabNavWp.width();
-	if(taballwidth+25>w){
+	if(taballwidth>w){
 		$tabNavmore.show()}
 	else{
 		$tabNavmore.hide();
@@ -266,6 +266,11 @@ $(function(){
 		var iframe_box=$("#iframe_box");
 		$("#min_title_list li").removeClass("active").eq(bStopIndex).addClass("active");
 		iframe_box.find(".show_iframe").hide().eq(bStopIndex).show();
+		if(bStopIndex == 1){
+			$('.iframe_box').show();
+		}else{
+			$('.iframe_box').hide();
+		}
 	});
 	$(document).on("click","#min_title_list li i",function(){
 		var aCloseIndex=$(this).parents("li").index();
