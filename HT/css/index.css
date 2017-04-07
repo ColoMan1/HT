@@ -1,4 +1,6 @@
 @media (min-width: 1200px) { .nav_right_p { float: right; } }
+@media (max-width: 768px) { .product_control_ul { display: none; } }
+@media (min-width: 992px) { .textarea_one { padding-left: 58px; } }
 .Hui-aside { background-color: rgba(0, 0, 0, 0.5); margin-left: 20px; padding: 0; }
 .Hui-aside .anv_left dl { padding: 19px 0; }
 
@@ -23,10 +25,24 @@
 
 .page-container .container_box { margin-top: 10px; }
 .page-container .container_box span { padding-left: 55px; }
-.page-container .container_inputbox { border: 1px solid #D4D5D5; border-radius: 3px; padding-left: 10px; }
+.page-container .container_inputbox { border: 1px solid #D4D5D5; border-radius: 3px; padding-left: 10px; background-color: #FFFFFF; }
 .page-container .container_inputbox input { border: 0; width: 100%; }
 
 .product_control_ul { width: 100px; height: 160px; background-color: #FFFFFF; border: 1px solid #F1F1F1; border-left: 0; }
 .product_control_ul li { text-align: center; height: 80px; line-height: 80px; }
+
+.product_active { color: #4981EC; }
+
+.product_input_box { display: inline-block; border: 1px solid #D3D4D4; border-radius: 3px; background-color: #FFFFFF; }
+.product_input_box input { width: 100%; border: 0; }
+
+.product_span { float: left; }
+
+.left_box { margin-top: 20px; margin-left: 50px; float: left; }
+.left_box button { width: 85px; height: 30px; background-color: #0000FF; border: 0; color: white; }
+
+.box_padding { padding-left: 0; }
+
+.indent_row div:first-child { padding-left: 27px; }
 
 /*# sourceMappingURL=index.css.map */

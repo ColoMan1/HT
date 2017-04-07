@@ -21,24 +21,107 @@
 <title>member_message</title>
 </head>
 <body>
-<nav class="breadcrumb">产品管理-产品录入</nav>
-<div class="page-container" style="padding: 0;width: 100px;float: left;">
+<nav class="breadcrumb" style="color: #4981EC;">产品管理-产品录入</nav>
+<div class="page-container" style="padding: 0;width: 7%;float: left;">
 	<dl id="menu-product">
 		<dt class="text-center product_control_dt">
 			<dd>
 				<ul class="product_control_ul">
 					<li>
-						<a data-title="产品录入" href="product_enter.html">产品录入</a>
+						<a data-title="产品录入" href="product_enter.html" class="product_active">产品录入</a>
 					</li>
 					<li>
 						<a data-title="产品维护" href="product_maintain.html">产品维护</a>
 					</li>
-				</ul>			
+				</ul>
 			</dd>
 		</dt>
 	</dl>
 </div>
-<div style="float: right;">12adddddddddddddddddddg2133333333333333333</div>
+<div style="float: left;width: 60%;margin-top: 35px;padding-left: 50px;" class="container-fluid">
+	<div class="row">
+		<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4"><span class="product_span">分类：</span>
+			<div class="product_input_box col-lg-10 col-md-9 col-sm-9 col-xs-7">
+				<select name="" style="border: 0;width: 100%;">
+					<option value="">1</option>
+					<option value="">2</option>
+					<option value="">3</option>
+				</select>
+			</div>
+		</div>
+		<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+			<span class="product_span">品牌：</span>
+			<div class="product_input_box col-lg-10 col-md-9 col-sm-9 col-xs-7">
+				<input type="text" />
+			</div>
+		</div>
+		<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+			<span class="product_span">名称：</span>
+			<div class="product_input_box col-lg-10 col-md-9 col-sm-9 col-xs-7">
+				<input type="text" />
+			</div>
+		</div>
+	</div>
+	<div class="row"style="margin-top: 50px;">
+		<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+			<span class="product_span">编号：</span>
+			<div class="product_input_box col-lg-10 col-md-9 col-sm-9 col-xs-7">
+				<input type="text" />
+			</div>
+		</div>
+		<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+			<span class="product_span">价格：</span>
+			<div class="product_input_box col-lg-10 col-md-9 col-sm-9 col-xs-7">
+				<input type="text" />
+			</div>
+		</div>
+		<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+			<span class="product_span">单位：</span>
+			<div class="product_input_box col-lg-10 col-md-9 col-sm-9 col-xs-7">
+				<select name="" style="border: 0;width: 100%;">
+					<option value="">1</option>
+					<option value="">2</option>
+					<option value="">3</option>
+				</select>
+			</div>
+		</div>
+	</div>
+	<div class="row" style="margin-top: 100px;">
+		<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+			<span class="product_span">产地：</span>
+			<div class="product_input_box col-lg-10 col-md-9 col-sm-9 col-xs-7">
+				<input type="text" />
+			</div>
+		</div>
+		<div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+			<span class="product_span">链接：</span>
+			<div class="product_input_box col-lg-11 col-md-10 col-sm-10 col-xs-10">
+				<input type="text" />
+			</div>
+		</div>
+	</div>
+	<div class="row" style="margin-top: 150px;">
+		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+			<span class="product_span">主图：</span>
+			<div class="product_input_box col-lg-11 col-md-11 col-sm-11 col-xs-11" style="height: 150px;">
+				<textarea name="" rows="" cols="" style="width: 100%;height: 100%;border: 0;"></textarea>
+			</div>
+		</div>
+	</div>
+	<div class="row" style="margin-top: 315px;">
+		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 textarea_one">
+		<input type="file"/>
+		</div>
+	</div>
+	<div class="row" style="margin-top: 360px;">
+		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+			<span class="product_span">明细图：</span>
+			<div class="product_input_box col-lg-11 col-md-11 col-sm-11 col-xs-11" style="height: 150px;">
+				<textarea name="" rows="" cols="" style="width: 100%;height: 100%;border: 0;"></textarea>
+			</div>
+		</div>
+	</div>
+</div>
 <!--_footer 作为公共模版分离出去-->
 <script type="text/javascript" src="../libs/jquery/1.9.1/jquery.min.js"></script> 
 <script type="text/javascript" src="../libs/layer/2.4/layer.js"></script>
@@ -50,6 +133,7 @@
 <script type="text/javascript" src="../libs/My97DatePicker/4.8/WdatePicker.js"></script> 
 <script type="text/javascript" src="../libs/datatables/1.10.0/jquery.dataTables.min.js"></script> 
 <script type="text/javascript" src="../libs/laypage/1.2/laypage.js"></script>
+<script src="../js/index.js" type="text/javascript" charset="utf-8"></script>
 </body>
 </html>
 

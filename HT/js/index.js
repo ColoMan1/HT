@@ -33,7 +33,12 @@ $(function(){
 	})
 })
 
-
+$(function(){
+	$('.product_control_ul li a').eq(1).click(function(){
+		var $index = $('.product_control_ul li a').index(this);
+		$('#min_title_list li span').eq(2).html('产品维护')
+	})
+})
 
 
 
