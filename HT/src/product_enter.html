@@ -18,7 +18,7 @@
 <script type="text/javascript" src="lib/DD_belatedPNG_0.0.8a-min.js" ></script>
 <script>DD_belatedPNG.fix('*');</script>
 <![endif]-->
-<title>member_message</title>
+<title>product_enter</title>
 </head>
 <body>
 <nav class="breadcrumb" style="color: #4981EC;">产品管理-产品录入</nav>
@@ -33,7 +33,7 @@
 					<li>
 						<a data-title="产品维护" href="product_maintain.html">产品维护</a>
 					</li>
-				</ul>			
+				</ul>
 			</dd>
 		</dt>
 	</dl>
@@ -41,14 +41,85 @@
 <div style="float: left;width: 60%;margin-top: 35px;padding-left: 50px;" class="container-fluid">
 	<div class="row">
 		<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4"><span class="product_span">分类：</span>
-			<select name="" class="col-lg-9 col-md-9 col-sm-9 col-xs-7">
-				<option value="">1</option>
-				<option value="">2</option>
-				<option value="">3</option>
-			</select>
+			<div class="product_input_box col-lg-10 col-md-9 col-sm-9 col-xs-7">
+				<select name="" class="select_style">
+					<option value="">1</option>
+					<option value="">2</option>
+					<option value="">3</option>
+				</select>
+			</div>
 		</div>
-		<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4"><span class="product_span">品牌：</span><div class="product_input_box col-lg-10 col-md-9 col-sm-9 col-xs-7"><input type="text" /></div></div>
-		<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4"><span class="product_span">名称：</span><div class="product_input_box col-lg-10 col-md-9 col-sm-9 col-xs-7"><input type="text" /></div></div>
+		<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+			<span class="product_span">品牌：</span>
+			<div class="product_input_box col-lg-10 col-md-9 col-sm-9 col-xs-7">
+				<input type="text" />
+			</div>
+		</div>
+		<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+			<span class="product_span">名称：</span>
+			<div class="product_input_box col-lg-10 col-md-9 col-sm-9 col-xs-7">
+				<input type="text" />
+			</div>
+		</div>
+	</div>
+	<div class="row"style="margin-top: 50px;">
+		<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+			<span class="product_span">编号：</span>
+			<div class="product_input_box col-lg-10 col-md-9 col-sm-9 col-xs-7">
+				<input type="text" />
+			</div>
+		</div>
+		<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+			<span class="product_span">价格：</span>
+			<div class="product_input_box col-lg-10 col-md-9 col-sm-9 col-xs-7">
+				<input type="text" />
+			</div>
+		</div>
+		<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+			<span class="product_span">单位：</span>
+			<div class="product_input_box col-lg-10 col-md-9 col-sm-9 col-xs-7">
+				<select name="" class="select_style">
+					<option value="">1</option>
+					<option value="">2</option>
+					<option value="">3</option>
+				</select>
+			</div>
+		</div>
+	</div>
+	<div class="row" style="margin-top: 100px;">
+		<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+			<span class="product_span">产地：</span>
+			<div class="product_input_box col-lg-10 col-md-9 col-sm-9 col-xs-7">
+				<input type="text" />
+			</div>
+		</div>
+		<div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+			<span class="product_span">链接：</span>
+			<div class="product_input_box col-lg-11 col-md-10 col-sm-10 col-xs-10">
+				<input type="text" />
+			</div>
+		</div>
+	</div>
+	<div class="row" style="margin-top: 150px;">
+		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+			<span class="product_span">主图：</span>
+			<div class="col-lg-11 col-md-11 col-sm-11 col-xs-11" style="padding-left: 0;">
+				<textarea name="" class="textarea_style"></textarea>
+			</div>	
+		</div>
+	</div>
+	<div class="row" style="margin-top: 255px;">
+		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 textarea_one">
+		<input type="file"/>
+		</div>
+	</div>
+	<div class="row" style="margin-top: 290px;">
+		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="padding-left: 0;">
+			<span class="product_span">明细图：</span>
+			<div class="col-lg-11 col-md-11 col-sm-11 col-xs-11" style="padding-left: 0;">
+				<textarea name="" class="textarea_style"></textarea>
+			</div>	
+		</div>
 	</div>
 </div>
 <!--_footer 作为公共模版分离出去-->

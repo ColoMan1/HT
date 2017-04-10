@@ -1,6 +1,11 @@
-@media (min-width: 1200px) { .nav_right_p { float: right; } }
-@media (max-width: 768px) { .product_control_ul { display: none; } }
-@media (min-width: 992px) { .textarea_one { padding-left: 58px; } }
+@charset "UTF-8";
+@font-face { font-family: 'iconfont'; src: url("iconfont.eot"); src: url("iconfont.eot?#iefix") format("embedded-opentype"), url("iconfont.woff") format("woff"), url("iconfont.ttf") format("truetype"), url("iconfont.svg#iconfont") format("svg"); }
+.iconfont { font-family: "iconfont" !important; font-size: 16px; font-style: normal; -webkit-font-smoothing: antialiased; -webkit-text-stroke-width: 0.2px; -moz-osx-font-smoothing: grayscale; }
+
+.padding_0 { padding: 0; }
+
+.margin_left12 { margin-left: 12%; }
+
 .Hui-aside { background-color: rgba(0, 0, 0, 0.5); margin-left: 20px; padding: 0; }
 .Hui-aside .anv_left dl { padding: 19px 0; }
 
@@ -44,5 +49,33 @@
 .box_padding { padding-left: 0; }
 
 .indent_row div:first-child { padding-left: 27px; }
+
+.indent_hx { border-bottom: 1px solid #F2F4FC; float: left; width: 90%; margin-left: 5%; margin-top: 20px; }
+
+.indent_container { float: left; }
+
+.indent_sh { padding-left: 5%; color: #8CAFF3; margin-bottom: 1%; overflow: hidden; }
+
+.indent_but { margin-left: 50%; height: 35px; width: 110px; margin-top: 3%; color: white; background-color: #0000FF; border: 0; border-radius: 3px; }
+
+.lable_bigbox { padding: 2% 10% 0 5%; }
+.lable_bigbox .lable_top_box .lable_input_box { border: 1px solid #D3D4D4; border-radius: 3px; background-color: #FFFFFF; }
+.lable_bigbox .lable_top_box .lable_input_box input { border: 0; width: 90%; }
+.lable_bigbox .lable_top_box .lable_top_right { border: 1px solid #D3D4D4; height: 25px; width: 39px; float: right; display: flex; display: -webkit-flex; justify-content: center; border-radius: 3px; }
+.lable_bigbox .lable_td { padding: 0 5%; }
+.lable_bigbox table td { text-align: center; /*璁剧疆姘村钩灞呬腑*/ vertical-align: middle; /*璁剧疆鍨傜洿灞呬腑*/ }
+.lable_bigbox .size_top td { font-size: 16px; }
+.lable_bigbox .size_bottom td { font-size: 14px; color: #959595; }
+
+.textarea_style { height: 100px; width: 100%; border-color: #D3D4D4; border-radius: 3px; }
+
+.select_style { border: 0; width: 100%; }
+
+@media (min-width: 1200px) { .nav_right_p { float: right; } }
+@media (max-width: 768px) { .product_control_ul { display: none; }
+  .indent_sh { display: none; } }
+@media (min-width: 992px) { .textarea_one { padding-left: 58px; } }
+@media (max-width: 992px) { .indent_container { float: none; }
+  .lable_bigbox .lable_td { padding: 0 2%; } }
 
 /*# sourceMappingURL=index.css.map */
