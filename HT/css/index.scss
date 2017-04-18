@@ -1,12 +1,15 @@
 
+
+
 @font-face {
   font-family: 'iconfont';
-  src: url('iconfont.eot');
-  src: url('iconfont.eot?#iefix') format('embedded-opentype'),
-  url('iconfont.woff') format('woff'),
-  url('iconfont.ttf') format('truetype'),
-  url('iconfont.svg#iconfont') format('svg');
+  src: url('../font/iconfont.eot');
+  src: url('../font/iconfont.eot?#iefix') format('embedded-opentype'),
+  url('../font/iconfont.woff') format('woff'),
+  url('../font/iconfont.ttf') format('truetype'),
+  url('../font/iconfont.svg#iconfont') format('svg');
 }
+
 .iconfont{
   font-family:"iconfont" !important;
   font-size:16px;font-style:normal;
@@ -17,7 +20,9 @@
 
 
 
-
+div{
+    padding: 0;
+}
 
 .padding_0{
     padding: 0;
@@ -129,7 +134,7 @@
 // -------------------------------------------------------------product_control 
 .product_control_ul{
     width: 100px;
-    height: 160px;
+    height: 241px;
     background-color: #FFFFFF;
     border: 1px solid #F1F1F1;
     border-left: 0;
@@ -188,6 +193,7 @@
 }
 .indent_container{
     float: left;
+    padding-left: 5%;
 }
 .indent_sh{
     padding-left: 5%;
@@ -256,7 +262,7 @@
     .size_top{
         td{
             font-size: 16px;
-            width: 10%;
+            width: 11%;
         }
         .top_cz{
             width: 15%;
@@ -274,10 +280,110 @@
     }
 }
 
+// -------------------------------------------------------------brand_push
+.brand_top_box{
+    overflow: hidden;
+    .brand_input_box{
+        border: 1px solid #D3D4D4;
+        border-radius: 3px;
+        background-color: #FFFFFF;
+        padding-left: 2%;
+        input{
+            border: 0;
+            width: 90%;
+            height: 28px;
+        }
+    }
+}
+.brand_center_box{
+    margin-top: 20px;
+    border-bottom: 1px solid #F1F4FC;
+    overflow: hidden;
+    padding-bottom: 5px;
+    .brand_center_left{
+        float: left;
+        font-size: 16px;
+        .brand_display{
+          display: inline-block;
+          border: 1px solid black;
+          padding: 0 5px;
+          i{
+              font-size: 14px;
+          }
+        }
+    }
+    .brand_center_right{
+        float: right;
+        background-color: #0100FE;
+        padding: 5px 15px;
+        color: #FFFFFF;
+        border-radius: 5px;
+        a{
+          color: #FFFFFF;  
+        }
+    }
+}
+.brand_bottom_box{
+    color: #919294;
+}
+.img_box{
+    border: 1px solid #CCCCCC;
+    padding: 0;
+}
+.bottom_p{
+    margin-top: 10px;
+    min-height: 72px;
+    display: inline-block;
+    height: 72px;
+    overflow: hidden;
+    font-size: 16px;
+    margin-bottom:0;
+}
 
+.box{
+    padding: 30px 30px 0 30px;
+    border: 1px solid #CCCCCC;
+    margin: 2% 4%;
+    min-height: 293px;
+}
+.box1{
+    margin-top: 18px;
+}
+.box1_left{
+    float: left;
+    i{
+        color: #0000FE;
+    }
+}
+.box1_right{
+    float: right;
+}
+#fenlei{
+    border: 1px solid #0100FE;
+    color: #0100FE;
+}
 
-
-
+.brand_fenlei_box2{
+    .fenlei_box2_box{
+        border-bottom: 1px solid #F2F5FC;
+        padding-bottom: 15px;
+        margin-top: 15px;
+    }
+    .fenlei_box2_left{
+        float: left;
+        margin-left: 20px;
+    }
+    .fenlei_box2_right{
+        float: right;
+        i,em{
+            font-style:normal;
+            color: #0100FE;
+        }
+        i{
+            margin: 0 55px;
+        }
+    }
+}
 
 
 

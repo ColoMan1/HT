@@ -28,10 +28,13 @@
 			<dd>
 				<ul class="product_control_ul">
 					<li>
-						<a data-title="产品录入" href="product_enter.html" class="product_active">产品录入</a>
+						<a data-title="产品录入" href="product_enter.html">产品录入</a>
 					</li>
 					<li>
 						<a data-title="产品维护" href="product_maintain.html">产品维护</a>
+					</li>
+					<li>
+						<a data-title="品牌推送" href="brand_push.html">品牌推送</a>
 					</li>
 				</ul>
 			</dd>
@@ -103,7 +106,7 @@
 	<div class="row" style="margin-top: 150px;">
 		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 			<span class="product_span">主图：</span>
-			<div class="col-lg-11 col-md-11 col-sm-11 col-xs-11" style="padding-left: 0;">
+			<div class="col-lg-11 col-md-11 col-sm-11 col-xs-11">
 				<textarea name="" class="textarea_style"></textarea>
 			</div>	
 		</div>
@@ -114,9 +117,9 @@
 		</div>
 	</div>
 	<div class="row" style="margin-top: 290px;">
-		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="padding-left: 0;">
+		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 			<span class="product_span">明细图：</span>
-			<div class="col-lg-11 col-md-11 col-sm-11 col-xs-11" style="padding-left: 0;">
+			<div class="col-lg-11 col-md-11 col-sm-11 col-xs-11">
 				<textarea name="" class="textarea_style"></textarea>
 			</div>	
 		</div>
@@ -134,6 +137,11 @@
 <script type="text/javascript" src="../libs/datatables/1.10.0/jquery.dataTables.min.js"></script> 
 <script type="text/javascript" src="../libs/laypage/1.2/laypage.js"></script>
 <script src="../js/index.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+$(function(){
+	$('.product_control_ul li a').eq(0).addClass('product_active').siblings().removeClass('product_active')
+})
+</script>
 </body>
 </html>
 

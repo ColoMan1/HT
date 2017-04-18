@@ -33,6 +33,7 @@ $(function(){
 	})
 })
 
+
 $(function(){
 	$('.product_control_ul li a').eq(1).click(function(){
 		var $index = $('.product_control_ul li a').index(this);
@@ -40,7 +41,23 @@ $(function(){
 	})
 })
 
+$(function(){
 
+	$('.brand_display').click(function(){
+		$('.brand_display').removeAttr('id','fenlei');
+		var $index = $('.brand_display').index(this)
+		console.log($index)
+		$('.brand_display').eq($index).attr('id','fenlei');
+		if( $index == 0){
+			$('.brand_fenlei_box1').show()
+			$('.brand_fenlei_box2').hide()
+		}
+		if( $index == 1){
+			$('.brand_fenlei_box1').hide()
+			$('.brand_fenlei_box2').show()
+		}
+	})
+})
 
 
 
