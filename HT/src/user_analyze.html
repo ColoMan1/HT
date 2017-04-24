@@ -1,0 +1,383 @@
+<!DOCTYPE HTML>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="renderer" content="webkit|ie-comp|ie-stand">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+		<meta http-equiv="Cache-Control" content="no-siteapp" />
+		<!--[if lt IE 9]>
+<script type="text/javascript" src="lib/html5shiv.js"></script>
+<script type="text/javascript" src="lib/respond.min.js"></script>
+<![endif]-->
+		<link href="../css/H-ui.min.css" rel="stylesheet" type="text/css" />
+		<link href="../css/H-ui.admin.css" rel="stylesheet" type="text/css" />
+		<link href="../iconfont/iconfont.css" rel="stylesheet" type="text/css" />
+		<link href="../css/index.css" rel="stylesheet">
+		<!--[if IE 6]>
+<script type="text/javascript" src="lib/DD_belatedPNG_0.0.8a-min.js" ></script>
+<script>DD_belatedPNG.fix('*');</script>
+<![endif]-->
+		<title>user_analyze</title>
+	</head>
+
+	<body>
+		<nav class="breadcrumb" style="color: #4981EC;">用户分析</nav>
+		<div class="container">
+			<div class="user_top_box col-lg-12">
+				<div class="top_box_left col-lg-6">
+					<div class="col-lg-2 col-md-2">
+						<img src="../images/bj.png" class="img-responsive col-lg-2" />
+					</div>
+					<div class="col-lg-10 col-md-10">
+						<p class="user_m">fx@163.com</p>
+						<div class="left_box1">
+							<div class="left_box_box">
+								<p>活跃度</p>
+								<div id="box1"></div>
+							</div>
+
+							<div class="left_box_box">
+								<p>活跃度</p>
+								<div id="box2"></div>
+							</div>
+
+							<div class="left_box_box">
+								<p>活跃度</p>
+								<div id="box3"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="top_box_right col-lg-6">
+					<div class="col-lg-2 col-md-2" style="margin-top: 10px;">
+						<p>用户信息</p>
+					</div>
+					<div class="col-lg-2 col-md-2" style="margin-top: 30px;">
+						<p class="change1">8699</p>
+						<p class="change2">注册用户数</p>
+					</div>
+					<div class="col-lg-2 col-md-2" style="margin-top: 30px;">
+						<p class="change1">8699</p>
+						<p class="change2">活跃用户数</p>
+					</div>
+					<div class="col-lg-6 col-md-6" id="echarts" style="height: 122px;"></div>
+				</div>
+			</div>
+
+			<div class="user_center_box col-lg-12">
+				<div class="col-lg-2 col-md-2" style="line-height: 80px;height: 80px;">
+					<p>黄金用户</p>
+				</div>
+				<div class="col-lg-2 col-md-2" style="line-height: 80px;">
+					<p>第<span style="font-size: 20px;">456546</span>名</p>
+				</div>
+				<div class="col-lg-2 col-md-2" style="line-height: 80px;">
+					<p>较昨日下降<span>10000</span>名</p>
+				</div>
+			</div>
+
+			<div class="user_bottom_box col-lg-12 col-md-12">
+				<div class="col-lg-5 col-md-5" id="bottom_box_echarts1"></div>
+				<div class="col-lg-5 col-md-5 col-lg-offset-2" id="bottom_box_echarts2"></div>
+			</div>
+		</div>
+		<!--_footer 作为公共模版分离出去-->
+		<script type="text/javascript" src="../libs/jquery/1.9.1/jquery.min.js"></script>
+		<script type="text/javascript" src="../libs/layer/2.4/layer.js"></script>
+		<script type="text/javascript" src="../js/H-ui.min.js"></script>
+		<script type="text/javascript" src="../js/H-ui.admin.js"></script>
+		<!--/_footer 作为公共模版分离出去-->
+
+		<!--请在下方写此页面业务相关的脚本-->
+		<script type="text/javascript" src="../libs/My97DatePicker/4.8/WdatePicker.js"></script>
+		<script type="text/javascript" src="../libs/datatables/1.10.0/jquery.dataTables.min.js"></script>
+		<script type="text/javascript" src="../libs/laypage/1.2/laypage.js"></script>
+		<script src="../js/index.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/echarts.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(function() {
+				$('.product_control_ul li a').eq(2).addClass('product_active').siblings().removeClass('product_active')
+			})
+			
+			var total = document.documentElement.clientHeight;
+			document.getElementById("bottom_box_echarts1").style.height = total / 2 + "px";
+			document.getElementById("bottom_box_echarts2").style.height = total / 2 + "px";
+			var myChartDayLine = echarts.init(document.getElementById('box1'));
+			myChartDayLine.clear();
+			myChartDayLine.setOption({
+				tooltip: {
+					trigger: 'axis'
+				},
+				grid: {
+					left: '7%',
+					right: '2%',
+					bottom: '3%',
+					containLabel: true
+				},
+				xAxis: {
+					show: false,
+					type: 'value'
+				},
+				yAxis: {
+					show: false,
+					type: 'category',
+					data: ['0']
+				},
+				series: [{
+						type: 'bar',
+						data: [3],
+						label: {
+							normal: {
+								show: true,
+								position: 'right'
+							}
+						}
+					}
+
+				]
+
+			});
+
+			var myChartDayLine = echarts.init(document.getElementById('box2'));
+			myChartDayLine.clear();
+			myChartDayLine.setOption({
+				tooltip: {
+					trigger: 'axis'
+				},
+				grid: {
+					left: '7%',
+					right: '2%',
+					bottom: '3%',
+					containLabel: true
+				},
+				xAxis: {
+					show: false,
+					type: 'value'
+				},
+				yAxis: {
+					show: false,
+					type: 'category',
+					data: ['0']
+				},
+				series: [{
+						type: 'bar',
+						data: [7],
+						label: {
+							normal: {
+								show: true,
+								position: 'right'
+							}
+						}
+					}
+
+				]
+
+			});
+
+			var myChartDayLine = echarts.init(document.getElementById('box3'));
+			myChartDayLine.clear();
+			myChartDayLine.setOption({
+				tooltip: {
+					trigger: 'axis'
+				},
+				grid: {
+					left: '7%',
+					right: '2%',
+					bottom: '3%',
+					containLabel: true
+				},
+				xAxis: {
+					show: false,
+					type: 'value'
+				},
+				yAxis: {
+					show: false,
+					type: 'category',
+					data: ['0']
+				},
+				series: [{
+						type: 'bar',
+						data: [2],
+						label: {
+							normal: {
+								show: true,
+								position: 'right'
+							}
+						}
+					}
+
+				]
+
+			});
+
+			var myChartCompletionRate = echarts.init(document.getElementById('echarts'));
+			myChartCompletionRate.clear();
+			var data = 30;
+			myChartCompletionRate.setOption({
+				graphic: [{
+					type: 'image',
+					left: 'center',
+					top: 'center',
+					//bounding:'all',
+					z: 4,
+					style: {
+						image: '~/Content/images/地球.png',
+						width: 100,
+						height: 100
+					}
+				}],
+				animation: false,
+				tooltip: {
+					show: false,
+					trigger: 'item',
+					formatter: "{a} <br/>{b}: {c} ({d}%)"
+				},
+				series: [{
+					type: 'pie',
+					radius: ['60%', '80%'],
+					color: '#000000',
+					label: {
+						normal: {
+							position: 'inner',
+							formatter: '{d}%',
+							show: false,
+							textStyle: {
+								color: '#fff',
+								fontWeight: 'bold',
+								fontSize: 14
+							}
+						}
+					},
+					labelLine: {
+						normal: {
+							show: false
+						}
+					},
+					data: [{
+						value: 100,
+						name: '一'
+					}]
+				}, {
+					name: '出库完成率',
+					type: 'pie',
+					radius: ['50%', '90%'],
+					startAngle: 270,
+					clockWise: false,
+					avoidLabelOverlap: false,
+					label: {
+						normal: {
+							show: false,
+							position: 'center'
+						},
+						emphasis: {
+							show: false,
+							textStyle: {
+								fontSize: '30',
+								fontWeight: 'bold'
+							}
+						}
+					},
+					labelLine: {
+						normal: {
+							show: false
+						}
+					},
+					data: [{
+						value: data,
+						name: '已出库',
+						label: {
+							normal: {
+								show: false
+							}
+						},
+						itemStyle: {
+							normal: {
+								color: '#3AB49B',
+								opacity: 0.5
+							}
+						}
+					}, {
+						value: 100 - data,
+						name: '未出库',
+						label: {
+							normal: {
+								show: false
+							}
+						},
+						itemStyle: {
+							normal: {
+								color: '#FFFFFF',
+								opacity: 0
+							}
+						}
+					}]
+				}]
+			});
+
+			var myChartDayLine = echarts.init(document.getElementById('bottom_box_echarts1'));
+			myChartDayLine.clear();
+			var times = ['8', '9', '10', '11', '12', '13', '14'];
+			var sum = [10, 20, 35, 42, 65, 85, 120];
+			myChartDayLine.setOption({
+
+				grid: {
+					left: '3%',
+					right: '4%',
+					bottom: '3%',
+					containLabel: true
+				},
+				yAxis: [{
+					type: 'category',
+					data: ['周日']
+				}],
+				xAxis: [{
+					type: 'value'
+				}],
+				series: [{
+					name: '直接访问',
+					type: 'bar',
+					data: [320]
+				}, {
+					name: '邮件营销',
+					type: 'bar',
+					stack: '广告',
+					data: [210]
+				}]
+			});
+
+			var myChartDayLine = echarts.init(document.getElementById('bottom_box_echarts2'));
+			myChartDayLine.clear();
+			var times = ['8', '9', '10', '11', '12', '13', '14'];
+			var sum = [10, 20, 35, 42, 65, 85, 120];
+			myChartDayLine.setOption({
+
+				grid: {
+					left: '3%',
+					right: '4%',
+					bottom: '3%',
+					containLabel: true
+				},
+				yAxis: [{
+					type: 'category',
+					data: ['周日']
+				}],
+				xAxis: [{
+					type: 'value'
+				}],
+				series: [{
+					name: '直接访问',
+					type: 'bar',
+					data: [320]
+				}, {
+					name: '邮件营销',
+					type: 'bar',
+					stack: '广告',
+					data: [210]
+				}]
+			});
+		</script>
+	</body>
+
+</html>

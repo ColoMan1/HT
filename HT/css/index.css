@@ -110,11 +110,29 @@ div { padding: 0; }
 .brand_fenlei_box2 .fenlei_box2_right i, .brand_fenlei_box2 .fenlei_box2_right em { font-style: normal; color: #0100FE; }
 .brand_fenlei_box2 .fenlei_box2_right i { margin: 0 55px; }
 
+.user_top_box { margin-top: 10px; }
+.user_top_box .top_box_left { border: 1px solid #F1F2F5; padding: 10px 20px; overflow: hidden; }
+.user_top_box .top_box_left img { height: 100px; width: 100%; }
+.user_top_box .top_box_left p { margin: 0; color: #CECECE; font-size: 13px; display: inline-block; }
+.user_top_box .top_box_left .user_m { color: #000000; padding-left: 20px; font-size: 17px; }
+.user_top_box .top_box_left .left_box1 { padding-left: 35px; }
+.user_top_box .top_box_left .left_box1 .left_box_box p { position: absolute; }
+.user_top_box .top_box_left .left_box1 .left_box_box #box1, .user_top_box .top_box_left .left_box1 .left_box_box #box2, .user_top_box .top_box_left .left_box1 .left_box_box #box3 { height: 20px; margin-bottom: 5px; }
+.user_top_box .top_box_right { border: 1px solid #F1F2F5; text-align: center; overflow: hidden; }
+.user_top_box .top_box_right p { margin-bottom: 0; }
+.user_top_box .top_box_right .change1 { font-size: 25px; color: #1D1DFE; }
+.user_top_box .top_box_right .change2 { color: #CECECE; }
+
+.user_center_box { background-color: #F5F6FA; text-align: center; overflow: hidden; margin: 3% 0; }
+.user_center_box p { margin-bottom: 0; }
+.user_center_box span { font-family: "microsoft yahei"; }
+
 .textarea_style { height: 100px; width: 100%; border-color: #D3D4D4; border-radius: 3px; }
 
 .select_style { border: 0; width: 100%; }
 
 @media (min-width: 1200px) { .nav_right_p { float: right; } }
+@media (max-width: 1200px) { .user_top_box .top_box_left .left_box1 { padding-left: 0; } }
 @media (max-width: 768px) { .product_control_ul { display: none; }
   .indent_sh { display: none; }
   .lable_bigbox .lable_td .left_float, .lable_bigbox .lable_td .right_float { float: none; } }

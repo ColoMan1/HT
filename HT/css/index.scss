@@ -385,6 +385,75 @@ div{
     }
 }
 
+// ------------------------------------------------------------  user_analyze 
+.user_top_box{
+    margin-top: 10px;
+    .top_box_left{
+        border: 1px solid #F1F2F5;
+        padding: 10px 20px;
+        overflow: hidden;
+        img{
+            height: 100px;
+            width: 100%;
+        }
+        p{
+            margin: 0;
+            color: #CECECE;
+            font-size: 13px;
+            display: inline-block;
+        }
+        .user_m{
+            color: #000000;
+            padding-left: 20px;
+            font-size: 17px;
+        }
+        .left_box1{
+          padding-left: 35px;
+              .left_box_box{
+                p{
+                    position: absolute;
+                }
+                #box1,#box2,#box3{
+                    height: 20px;
+                    margin-bottom: 5px;
+                }
+            }
+        }
+        
+    }
+    .top_box_right{
+        border: 1px solid #F1F2F5;
+        text-align: center;
+        overflow: hidden;
+        p{
+            margin-bottom: 0;
+        }
+        .change1{
+            font-size: 25px;
+            color: #1D1DFE;
+        }
+        .change2{
+            color: #CECECE;
+        }
+    }
+}
+.user_center_box{
+    background-color: #F5F6FA;
+    text-align: center;
+    overflow: hidden;
+    margin: 3% 0;
+    p{
+        margin-bottom: 0;
+    }
+    span{
+        font-family: "microsoft yahei";
+    }
+}
+
+
+
+
+
 
 
 
@@ -449,6 +518,11 @@ div{
 @media (min-width:1200px){
     .nav_right_p{
         float: right;
+    }
+}
+@media (max-width:1200px){
+    .user_top_box .top_box_left .left_box1{
+        padding-left: 0;
     }
 }
 @media (max-width:768px){
